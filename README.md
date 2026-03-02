@@ -4,7 +4,7 @@ Idea Stress-Test Engine is an open-source web app that takes a business idea and
 
 ## Live Demo
 
-https://tinyurl.com/stresstest-ai
+https://bit.ly/idea-stress
 
 ## Quick Start
 
