@@ -1,0 +1,36 @@
+# Web framework
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+gunicorn==22.0.0
+
+# HTTP client (async)
+httpx==0.27.0
+
+# Data validation
+pydantic==2.7.1
+pydantic-settings==2.2.1
+
+# Database
+sqlalchemy[asyncio]==2.0.30
+asyncpg==0.29.0
+alembic==1.13.1
+
+# Embeddings — CPU only, fits 512MB with model loaded once
+sentence-transformers==2.7.0
+numpy==1.26.4         # faiss-cpu 1.8.0 compatibility (avoid NumPy 2.x ABI break)
+scipy==1.11.4         # keep ABI aligned with NumPy 1.26.x on local Apple Silicon installs
+scikit-learn==1.4.2   # sentence-transformers transitively imports sklearn at startup
+torch==2.3.0          # CPU wheel; saves ~1GB vs CUDA
+faiss-cpu==1.8.0
+
+# Rate limiting & middleware
+slowapi==0.1.9
+python-multipart==0.0.9
+
+# Utilities
+python-dotenv==1.0.1
+tenacity==8.3.0             # LLM retry logic
+orjson==3.10.3              # fast JSON serialisation
+
+# Logging
+structlog==24.1.0
